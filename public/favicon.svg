@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Emerald Green Gradient Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#10B981" />
+      <stop offset="50%" stopColor="#059669" />
+      <stop offset="100%" stopColor="#047857" />
+    </linearGradient>
+
+    <!-- Warm Amber Gold for Iconic Auto Roof -->
+    <linearGradient id="roofGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FDE047" />
+      <stop offset="50%" stopColor="#F59E0B" />
+      <stop offset="100%" stopColor="#D97706" />
+    </linearGradient>
+
+    <!-- Glass Windshield Reflection -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#E0F2FE" stop-opacity="0.9" />
+      <stop offset="100%" stopColor="#7DD3FC" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Chrome Wheel Rim Gradient -->
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#F8FAFC" />
+      <stop offset="100%" stopColor="#94A3B8" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow for Vehicle -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" floodColor="#022C22" floodOpacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- App Icon Squircle Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Internal Highlight Rim -->
+  <rect x="6" y="6" width="500" height="500" rx="106" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="4" />
+
+  <!-- Speed Motion Arc at bottom left -->
+  <path d="M 70 395 C 130 405 210 400 270 395" stroke="#34D399" stroke-width="8" stroke-linecap="round" stroke-opacity="0.6" />
+
+  <!-- Main Auto-Rickshaw Graphic -->
+  <g filter="url(#shadow)" transform="translate(10, 0)">
+    
+    <!-- Iconic Yellow / Gold Canopy Roof -->
+    <path d="M 125 210 
+             C 140 170 195 150 280 150 
+             C 335 150 365 170 380 205 
+             L 368 218 
+             C 345 200 300 188 260 188 
+             C 190 188 145 205 125 210 Z" 
+          fill="url(#roofGold)" />
+
+    <!-- Upper Body & Cabin Frame (Crisp Pure White) -->
+    <path d="M 130 215 
+             C 150 185 200 170 275 170 
+             C 340 170 375 195 385 225 
+             L 375 295 
+             C 375 305 365 315 350 315 
+             L 135 315 
+             C 120 315 110 305 110 290 
+             L 115 240 
+             C 118 225 122 218 130 215 Z" 
+          fill="#FFFFFF" />
+
+    <!-- Windshield Glass Window (Front) -->
+    <path d="M 290 195 
+             L 360 215 
+             L 350 270 
+             L 290 270 Z" 
+          fill="url(#glassGrad)" 
+          rx="6" />
+
+    <!-- Driver & Passenger Side Openings -->
+    <!-- Rear Passenger Window / Opening -->
+    <rect x="140" y="200" width="75" height="70" rx="8" fill="#047857" opacity="0.85" />
+    
+    <!-- Middle Divider / Pillar -->
+    <rect x="225" y="195" width="55" height="75" rx="8" fill="#047857" opacity="0.85" />
+
+    <!-- Lower Auto Rickshaw Body Panel (Iconic Emerald Green & Yellow Accent) -->
+    <path d="M 115 290 
+             L 375 290 
+             C 385 290 392 300 390 310 
+             L 380 345 
+             C 375 355 365 360 350 360 
+             L 130 360 
+             C 115 360 105 350 105 335 
+             L 105 310 
+             C 105 298 110 290 115 290 Z" 
+          fill="#F59E0B" />
+
+    <!-- Front Nose / Front Mudguard -->
+    <path d="M 375 295 
+             C 395 310 405 330 405 350 
+             L 365 355 
+             L 360 325 Z" 
+          fill="#FFFFFF" />
+
+    <!-- Headlight Beam -->
+    <circle cx="395" cy="335" r="14" fill="#FDE047" />
+    <circle cx="395" cy="335" r="8" fill="#FFFFFF" />
+
+    <!-- Rear Wheel Wheel-well cutout -->
+    <path d="M 145 360 A 42 42 0 0 1 235 360 Z" fill="#047857" />
+
+    <!-- Front Wheel Wheel-well cutout -->
+    <path d="M 330 360 A 38 38 0 0 1 405 360 Z" fill="#047857" />
+
+    <!-- REAR WHEEL -->
+    <g transform="translate(190, 360)">
+      <!-- Outer Black Tire -->
+      <circle cx="0" cy="0" r="44" fill="#1E293B" />
+      <circle cx="0" cy="0" r="32" fill="#334155" />
+      <!-- Silver Rim -->
+      <circle cx="0" cy="0" r="22" fill="url(#rimGrad)" />
+      <!-- Center Hub -->
+      <circle cx="0" cy="0" r="10" fill="#059669" />
+      <circle cx="0" cy="0" r="4" fill="#F8FAFC" />
+    </g>
+
+    <!-- FRONT WHEEL -->
+    <g transform="translate(365, 360)">
+      <!-- Outer Black Tire -->
+      <circle cx="0" cy="0" r="40" fill="#1E293B" />
+      <circle cx="0" cy="0" r="28" fill="#334155" />
+      <!-- Silver Rim -->
+      <circle cx="0" cy="0" r="19" fill="url(#rimGrad)" />
+      <!-- Center Hub -->
+      <circle cx="0" cy="0" r="8" fill="#059669" />
+      <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
+    </g>
+
+    <!-- Smart Wi-Fi Signal Waves on top of rickshaw (Smart Connected Ride) -->
+    <path d="M 235 125 A 32 32 0 0 1 285 125" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" />
+    <path d="M 245 140 A 18 18 0 0 1 275 140" fill="none" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <!-- Clean Minimalist App Monogram "रिक्शा • RIKSHAW" Bottom Pill -->
+  <rect x="146" y="430" width="220" height="42" rx="21" fill="#022C22" fill-opacity="0.55" />
+  <text x="256" y="458" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">RICKSHAW</text>
+</svg>
